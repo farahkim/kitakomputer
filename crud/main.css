@@ -1,0 +1,160 @@
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+html {
+
+	font-size: 62.5%;
+}
+
+body {
+
+	font-size: 10px;
+	font-weight: 400;
+	font-family: julius sans, Arial, Helvetica, sans-serif;
+}
+
+header {
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/hero.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+header .text__box {
+
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 4rem 6rem;
+    border-radius: 1rem;
+	box-shadow: 0 .6rem 4rem -.4rem rgba(0,0,0, 0.7);
+	text-align: center;
+}
+
+header .text__box h2 {
+
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 400;
+	letter-spacing: 4px;
+	margin-bottom: 2rem;
+	padding: 0 2rem;
+	color: #353434fa;
+}
+
+header .text__box p {
+
+	font-size: 1.4rem;
+	font-weight: 400;
+
+}
+
+.text__box .act__btn {
+
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.text__box .act__btn a:link, 
+.text__box .act__btn a:visited {
+
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 2rem 2.3rem;
+    background-color: #9980FA;
+    text-transform: uppercase;
+	border-radius: 1rem;
+	transition:  background-color .2s;
+}
+
+.text__box .act__btn a:hover {
+
+	background-color: rgba(152, 128, 250, 0.884);
+}
+
+
+.popup {
+
+	position: relative;
+	padding: 3rem 0;
+	background-color: rgba(0, 0, 0, 0.384);
+	height: 100vh;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .5s;
+}
+
+.popup:target {
+
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.popup .popup__content {
+
+    background-color: rgba(255, 255, 255, 0.973);
+    box-shadow: 0 4px 40px -5px #555555ad;
+	padding: 4rem;
+    border-radius: 1rem;
+    width: 50rem;
+	margin: 0 auto;
+	position: relative;
+}
+
+.popup .popup__content img {
+
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.popup .popup__content .close {
+
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	color: rgb(88, 88, 88);
+	text-decoration: none;
+	font-size: 3rem;
+	font-weight: 700;
+	transition: all .3s;
+}
+
+.popup .popup__content .close:hover {
+
+	color: #33d9b2;;
+}
+
+.popup .content--text {
+
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.popup .content--text h4 {
+
+	font-size: 4rem;
+	font-weight: 400;
+	padding-bottom: 2rem;
+}
+
+.popup .content--text .sub__text {
+
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding-bottom: 2rem;
+}
+
+
+
+
